@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selector</title>
+    <style>
+        /* 
+        계층선택자 : 특정 위치의 요소를 계층적 구조로 선택 
+        (1) 자손선택자 -> A B (띄어쓰기)
+        (2) 자식선택자 -> A>B
+        (3) 근접후행선택자 -> A+B
+        (4) 후행선택자 -> A~B
+        (A를 기준으로 B를 선택)
+        */
+
+        /* div 기준, span 선택 -> 자손선택자 */
+        div span{
+            color: salmon;
+        }
+
+        /* div 기준, li 선택 -> 자손선택자 */
+        div li{
+            color: cornflowerblue;
+        }
+
+        /* ol 기준, span 선택 -> 자식선택자 */
+        ol>span{
+            color: forestgreen;
+        }
+
+        /* 첫 번째 li 기준, 바로 옆의 형제 li 선택 -> 근접후행선택자 */
+        .firstLi+li{
+            color: tomato;
+        }
+
+        /* 첫 번째 li 기준, 모든 형제 li 선택-> 후행선택자 */
+        .firstLi~li{
+            color: lightslategray;
+        }
+
+        /* 그룹선택자 : 다양한 요소들을 콤마(,)로 선택*/
+        li,span{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <strong style="font-style: oblique; text-decoration-line: underline; font-size: larger;">교육생 수칙</strong>
+        <ol>
+            <li class="firstLi">지각금지</li>
+            <li>결석금지</li>
+            <span>매일매일</span>
+            <li>복습하기</li>
+        </ol>
+
+    </div>
+</body>
+</html>

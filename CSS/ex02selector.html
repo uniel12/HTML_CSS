@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* 선택자 : 특정 요소를 선택할 때 사용 */
+        /* 1. 전체선택자 -> *로 표시 */
+        *{
+            font-family: serif;
+            /* 전체 여백 없이 처리할 때
+            margin: 0;
+            padding: 0; */
+        }
+        /* 2. 태그선택자 -> 태그이름으로 표시 */
+        li{
+            font-size: large;
+        }
+        /* 
+        아이디 -> 중복 불가능, 한 문서 한번만
+        클래스 -> 중복가능, 재사용성 뛰어남
+         */
+        /* 3. 아이디선택자 -> #로 표시 */
+        #big{
+            background-color: aliceblue;
+            font-style: italic;
+         }
+        /* 4. 클래스선택자 -> .로 표시 */
+        .notbig{
+            background-color: azure;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        /* 
+        1. 담임 선생님이름만 배경색 lightblue로 지정! -> id 선택자 사용
+        2. 성별이 여자인 사람만 밑줄 효과 지정! -> class 선택자 사용
+         */
+         #dam{
+            background-color: lightblue;
+         }
+        .female{
+            text-decoration: underline;
+        }
+        .spanTag{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>스마트인재개발원 과정 안내</h3>
+    <ul>
+        <li class="notbig underline">인공지능</li>
+        <li id="big" class="underline">빅데이터</li>
+        <li class="notbig">IOT</li>
+    </ul>
+    <h3>연구원 소개</h3>
+    <ul>
+        <li class="female">양세영</li>
+        <li id= "dam" class="female">
+            <span class="spanTag">이주희</span>
+        </li>
+        <li>정봉균</li>
+    </ul>
+
+
+</body>
+</html>
