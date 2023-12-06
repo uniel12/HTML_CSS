@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation practice</title>
+    <style>
+        /* 두 개의 이미지가 2초 간격으로 계속 재생되는 화면 만들기 */
+        .imgSec{
+            width: 600px;
+            height: 800px;
+          
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            /* 1. 이름 , 시간 지정 */
+            animation-name: imgAni;
+            animation-duration: 2s;
+
+
+             /* 2. 반복 횟수 지정  */
+             animation-iteration-count: infinite;
+             animation-direction: alternate;
+           
+        }
+        @keyframes imgAni {
+            from{
+                background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MjRfMTU1%2FMDAxNjYxMzM5MzY5NDQ4.B1EosUSOT_WXuMLynIYkKpqrXoWX_OYa2bVk0DYXYigg.xQqcdbgU4q51Roo5iWcOHgalrkY-XYrbd5Td4Yev-K8g.JPEG.zineo3159%2Fmnet%25A3%25DFk%25A3%25AD20220824%25A3%25AD195028%25A3%25AD001.jpg&type=sc960_832);
+            }
+            to{
+                background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMjExMjhfMyAg%2FMDAxNjY5NjE0NzU1MjI1.nKlR7b6Bo2daT21DR2MxqKsEfq2SxzUYZl6mWlh52Fkg.-t5dj_Z5wpzkcmIGBLzy_Bo0WiMDia-g8HMs9DrWuIQg.JPEG%2FIsXMVyqHZr5s-AaZmtHSWXh1BCpo.jpg&type=a340);
+                             
+            }  
+        } 
+
+
+    </style>
+</head>
+<body>
+    <div class="imgSec"></div>
+    
+
+</body>
+</html>

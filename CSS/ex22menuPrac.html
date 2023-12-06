@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu practice</title>
+    <style>
+        /*-- 아이스크림 메뉴판 전체 영역을 */
+        .cardWrap{
+            /* 메뉴판 전체 영역을 container 하나의 영역을 item으로 */
+            display: flex;
+
+            /* iceWrap 줄바꿈 될 수 있게 */
+            flex-wrap: wrap;
+
+            /* iceWrap 공간 배분, 주위에 동일한 여백 주기 */
+            justify-content: space-around;
+        }
+        .iceWrap{
+            background-color : rgb(230, 230, 250) ;
+            margin-bottom: 50px;
+
+            /* 아이스크림 하나의 영역을 container
+            메뉴 사진, 메뉴 이름 item으로 */
+            display: flex;
+
+            /* 사진과 이름을 세로로 배치 */
+            flex-direction: column;
+            /* 아이템을 가운데 정렬 */
+            align-items: center;
+        }
+        .imgSec{
+            width: 300px;
+            height: 300px;
+           background-size: cover;
+            background-position: center;
+        }
+        .textSec{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .img1{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1746498851.png);
+            background-color: lavenderblush;
+        }
+        .img2{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1528197022.png);
+            background-color: lavenderblush;
+        }
+        .img3{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1452062933.png) ;
+            background-color: lavenderblush;
+        }
+        .img4{
+            background-image:url(https://www.baskinrobbins.co.kr/upload/product/1670827206.png) ;
+            background-color: lavenderblush;
+        }
+        .img5{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1530775918.png);
+            background-color: lavenderblush;
+        }
+        .img6{
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1452062882.png);
+            background-color: lavenderblush;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cardWrap">
+        <!-- 아이스크림 메뉴판 전체 영역 -->
+        <div class="iceWrap">
+            <!-- 아이스크림 메뉴 하나의 영역 -->
+            <div class="imgSec img1">
+                <!--아이스크림 메뉴 사진  -->
+            </div>
+            <p class="textSec">
+                <!-- 아이스크림 메뉴 이름 -->
+                라이언 망고 마카롱🥭
+            </p>
+        </div>
+        <div class="iceWrap">
+            <div class="imgSec img2">
+            </div>
+            <p class="textSec">
+                엄마는 외계인👾
+            </p>
+        </div>
+        <div class="iceWrap">
+            <div class="imgSec img3">
+            </div>
+            <p class="textSec">
+                아몬드 봉봉🥔
+            </p>
+        </div>
+        <div class="iceWrap">
+            <div class="imgSec img4">
+            </div>
+            <p class="textSec">
+                민트 초콜릿 칩🌿
+            </p>
+        </div>
+        <div class="iceWrap">
+            <div class="imgSec img5">
+            </div>
+            <p class="textSec">
+                뉴욕치즈케이크🧀
+            </p>
+        </div>
+        <div class="iceWrap">
+            <div class="imgSec img6">
+            </div>
+            <p class="textSec">
+                체리쥬빌레🍒
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

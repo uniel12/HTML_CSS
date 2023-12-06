@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* animation : 요소에 적용되는 스타일을 다른 스타일로
+                       부드럽게 전환시켜주는 속성 */
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+
+            /* 이름 지정 */
+            animation-name: boxAni;
+
+            /* 지속 시간 지정 */
+            animation-duration: 3s;
+  
+            /* 반복 횟수 지정  */
+            animation-iteration-count: infinite;
+
+            /* 방향 지정
+            nomal -> 기본값
+            reverse -> 역방향
+            alternate -> 왕복
+            alternate-reverse -> 역방향 왕복  */
+            animation-direction: alternate;
+
+            /* (웹페이지 로드 후 )지연시간 지정 */
+            animation-delay: 2s;
+           
+
+            /*  수치 변형 함수 지정  */
+            animation-timing-function: cubic-bezier(1,-0.36, 0.43, 0.55);
+
+
+        }
+        /* 애니메이션 움직임을 제어 */
+        @keyframes boxAni {
+            from{
+                /* 시작 지점 */
+                background-color: salmon;
+            }
+            to{
+                /* 도착 지점 */
+                background-color: dodgerblue;
+                border-radius: 50%;
+                margin-left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

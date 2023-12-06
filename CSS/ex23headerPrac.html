@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header practice</title>
+    <style>
+        /* 1. ul태그 flex container로 지정 
+        ->li 가로 배치 */
+        ul{
+            display: flex;
+            list-style-type: none;
+            font-size: 1.25rem;
+            align-items: center;
+        }
+        /* 2. container div를 flex container로 지정 
+        -> imgSec과 ul 가로 배치*/
+        .container{
+            display: flex;
+            /* background-color: beige; */
+            padding : 0 10%;
+            justify-content: space-between;
+        }
+        /* 3. imgSec div를 flex container로 지정 */
+        .imgSec{
+            display: flex;
+            align-items: center;
+        }
+        /* 4. li 형태 잡아주기 */
+        li{
+            margin: 0 15px;
+            /* background-color: darksalmon; */
+
+        }
+        .joinBtn{
+
+            background-color: #008acc;
+            color: white;
+            padding : 15px 20px;
+            border-radius: 10px;
+
+
+        }
+        /* 5. 마우스 올렸을 때 효과주기 */
+        li:hover{
+            color: #008acc;
+            text-decoration:underline;
+            text-underline-position: under;
+            cursor: pointer;
+        }
+        .joinBtn:hover{
+            background-color: #000;
+            color:#fff;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imgSec">
+            <img src="https://smartceleb.mycafe24.com/wp-content/uploads/2022/01/smart_logo.png" alt="">
+        </div>
+        <ul>
+            <li>취업연계과정</li>
+            <li>취업LIVE</li>
+            <li>프로젝트</li>
+            <li>후기모음</li>
+            <li>기관소개</li>
+            <li>교육문의/제휴</li>
+            <li>원데이클래스</li>
+            <li class="joinBtn">수강신청</li>
+        </ul>
+
+    </div>
+</body>
+</html>
